@@ -1,0 +1,306 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+.container-top{
+  display:block;
+  background-color: rgba(215,206,206,.15);
+  height: 80px;
+  line-height: 40px;
+}
+
+.icon-left{
+  display: inline-block;
+  float: left;
+  margin: 20px 50px 0 150px;
+}
+
+.list-top li{
+  color:inherit;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  color: rgb(0,0,0);
+  line-height: 14px;
+  margin: 28px;
+  font-size: 24px;
+  font-family: "微軟正黑體"
+}
+
+.list-top a{
+  color: rgb(0,0,0);
+}
+
+asdf{
+  clear: both;
+}
+
+.main-block{
+  background-color: rgb(0,0,0);
+  overflow: hidden;
+}
+
+@-webkit-keyframes func {
+ 0%{transform:'scale(1)';}
+ 30%{transform:'scale(3)';}
+100%{transform:'scale(1)';}
+}
+.mainphoto {
+  animation: 3s func;
+  text-align: center;
+  transition: transform 1s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainphoto img {
+  width: 100%;
+}
+
+.mainphoto:hover {
+  transform: scale(1.5);
+}
+
+.mainphoto:hover > .center-title   {
+  opacity: 1;
+}
+
+.mainphoto> .center-title {
+  opacity: 0;
+  transition: opacity 1s ease;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  margin: auto;
+  line-height: 562px;
+  height: 562px;
+  width: 200px;
+  left: 0px;
+  right: 0px;
+  font-family: "微軟正黑體";
+}
+
+
+.up_title_left, .up-title, .up_title_right {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.down_title_left, .down-title, .down_title_right{
+  display: inline-block;
+  margin-left: 30px;
+}
+.up_title_left img, .up_title_right img,.down_title_left img, .down-title img, .down_title_right img {
+  width: 100%;
+}
+.up-block{
+  /* height: 335px; */
+  display: inline-block;
+  text-align: center;
+  margin: 18px 0 18px 0;
+}
+
+.down-block{
+  /* height: 335px; */
+  display: inline-block;
+  text-align: center;
+  margin: 18px 0 18px 0;
+}
+
+.second-block{
+  display: block;
+  background-color: rgba(215,206,206,.15);
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.up_title_right{
+}
+
+.down_title_right{
+
+}
+
+.up-title h2{
+  font-size: 24px;
+  font-family: "微軟正黑體";
+}
+
+.down-title h2{
+  font-size: 24px;
+  font-family: "微軟正黑體"
+}
+
+line2{
+  display:block;
+  height:1px;
+  background:rgb(0,0,0);
+  margin: 0 0 30px 0;
+}
+
+.foot {
+  background-color: rgb(0,0,0);
+}
+
+.foot-container{
+  display: block;
+  padding-left: 60px;
+  width: 100%;
+  margin: auto;
+  padding: 5px 50px;
+  box-sizing: border-box;
+}
+
+.footlist-first {
+  float:left;
+}
+.footlist-second{
+  float: none;
+  position: relative;
+}
+
+
+.footlist-second li,.footlist-first li{
+  list-style: none;
+  color: rgb(255,255,255);
+}
+
+line1{
+  display:block;
+  height:1px;
+  background:rgb(255,255,255);
+}
+
+.icon-foot{
+  display: inline-block;
+  float: right;
+  margin-right: 200px;
+  top: -30px;
+  position: relative;
+}
+
+.icon-footbtn{
+  margin-right: 10px;
+}
+
+footer {
+  background-color: rgb(0,0,0);
+}
+.foot-content{
+  display: block;
+  width:1100px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.foot-content p{
+  display: inline-block;
+  color: rgb(255,255,255);
+  margin-right: 40px;
+}
+.block-c{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.block-c>*{
+  flex:1;
+}
+.block-c ._title{
+
+vertical-align: middle;
+
+display: flex;
+
+justify-content: flex-end;
+
+flex-direction: column;
+
+flex: initial;
+}
+
+.block-c img{
+  width:80%;
+  height: 100;
+  object-fit:cover;
+}
+
+@media screen and (max-width: 768px) and (min-width: 360px)   {
+
+  .icon-left{
+    display: inline-block;
+    float: left;
+    margin: 40px 0px 0 100px;
+  }
+
+  .list-top li{
+    line-height: 10px;
+    margin: 20px;
+    font-size: 20px;
+  }
+  .container-top{
+    height: 180px;
+    line-height: 80px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .up_title_left, .up_title_right,.down_title_left, .down-title, .down_title_right {
+    float: left;
+  }
+
+  .up-title,.down-title{
+    float: none;
+  }
+
+}
+
+@media screen and  (max-width: 769px) {
+  ._title_left{order:1;}
+  ._title_right{order:2;}
+  ._title_left, ._title_right{
+    width: 50%;
+    flex:  initial;
+  }
+  ._title{
+    order:3;
+    width:100%;
+    flex: initial;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+._title_left, ._title_right{
+  width: 100%;
+}
+.icon-foot{display:none}
+.icon-left{
+  margin:10px ;
+}
+.list-top{
+  clear:both;
+  overflow-x:scroll;
+  /* width:1000px; */
+  /* overflow: hidden; */
+}
+.list-top ul{
+/* overflow-x: scroll; */
+width: 1000px;
+}
+.list-top li{
+
+}
+
+}
